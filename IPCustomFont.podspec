@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "http://github.com/IntrepidPursuits/IPCustomFont/IPCustomFont.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.1" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
