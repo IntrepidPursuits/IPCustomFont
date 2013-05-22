@@ -1,0 +1,2 @@
+@interface UILabel (IPCustomFont)
+@end
