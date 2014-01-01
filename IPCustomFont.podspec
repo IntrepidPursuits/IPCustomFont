@@ -15,11 +15,11 @@ in the nib or storyboard. With IPCustomFont, you can leverage the "User-defined 
 attributes" in interface builder's identity inspector to do just that.
                    DESC
 
-  s.homepage     = "https://github.com/IntrepidPursuits/IPCustomFont"
-  s.license      =  { :type => 'BSD' }
-  s.author             = { "Matt Bridges" => "matt@intrepid.i9o" }
-  s.platform     = :ios
-  s.source       = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.2" }
+  s.homepage      = "https://github.com/IntrepidPursuits/IPCustomFont"
+  s.license       =  {:type => 'BSD', :file => 'LICENSE.txt'}
+  s.author        = { "Matt Bridges" => "matt@intrepid.i9o" }
+  s.platform      = :ios
+  s.source        = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.2" }
   s.source_files  = '*.{h,m}'
   s.requires_arc = true
 
