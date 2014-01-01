@@ -17,7 +17,7 @@ attributes" in interface builder's identity inspector to do just that.
 
   s.homepage      = "https://github.com/IntrepidPursuits/IPCustomFont"
   s.license       =  {:type => 'BSD', :file => 'LICENSE.txt'}
-  s.author        = { "Matt Bridges" => "matt@intrepid.i9o" }
+  s.author        = { "Matt Bridges" => "matt@intrepid.io" }
   s.platform      = :ios
   s.source        = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.2" }
   s.source_files  = '*.{h,m}'
