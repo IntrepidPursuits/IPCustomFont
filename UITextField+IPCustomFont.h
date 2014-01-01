@@ -1,0 +1,2 @@
+@interface UITextField (IPCustomFont)
+@end

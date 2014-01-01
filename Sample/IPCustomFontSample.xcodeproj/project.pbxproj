@@ -20,6 +20,8 @@
 		C97C8A1D174D40C000FB6B1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C8A1C174D40C000FB6B1D /* ViewController.m */; };
 		C97C8A25174D49A000FB6B1D /* UILabel+IPCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C8A23174D49A000FB6B1D /* UILabel+IPCustomFont.m */; };
 		C97C8A27174D49D400FB6B1D /* BEBAS___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C97C8A26174D49D400FB6B1D /* BEBAS___.TTF */; };
+		C9C6143C187399CA0001CACD /* UIButton+IPCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6143B187399CA0001CACD /* UIButton+IPCustomFont.m */; };
+		C9C6143F18739F120001CACD /* UITextField+IPCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6143E18739F120001CACD /* UITextField+IPCustomFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		C97C8A23174D49A000FB6B1D /* UILabel+IPCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+IPCustomFont.m"; path = "../../UILabel+IPCustomFont.m"; sourceTree = "<group>"; };
 		C97C8A24174D49A000FB6B1D /* UILabel+IPCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+IPCustomFont.h"; path = "../../UILabel+IPCustomFont.h"; sourceTree = "<group>"; };
 		C97C8A26174D49D400FB6B1D /* BEBAS___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BEBAS___.TTF"; sourceTree = "<group>"; };
+		C9C6143A187399CA0001CACD /* UIButton+IPCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+IPCustomFont.h"; path = "../../UIButton+IPCustomFont.h"; sourceTree = "<group>"; };
+		C9C6143B187399CA0001CACD /* UIButton+IPCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+IPCustomFont.m"; path = "../../UIButton+IPCustomFont.m"; sourceTree = "<group>"; };
+		C9C6143D18739F120001CACD /* UITextField+IPCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+IPCustomFont.h"; path = "../../UITextField+IPCustomFont.h"; sourceTree = "<group>"; };
+		C9C6143E18739F120001CACD /* UITextField+IPCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+IPCustomFont.m"; path = "../../UITextField+IPCustomFont.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				C97C8A26174D49D400FB6B1D /* BEBAS___.TTF */,
-				C97C8A23174D49A000FB6B1D /* UILabel+IPCustomFont.m */,
 				C97C8A24174D49A000FB6B1D /* UILabel+IPCustomFont.h */,
+				C97C8A23174D49A000FB6B1D /* UILabel+IPCustomFont.m */,
+				C9C6143A187399CA0001CACD /* UIButton+IPCustomFont.h */,
+				C9C6143B187399CA0001CACD /* UIButton+IPCustomFont.m */,
+				C9C6143D18739F120001CACD /* UITextField+IPCustomFont.h */,
+				C9C6143E18739F120001CACD /* UITextField+IPCustomFont.m */,
 				C97C8A0F174D40C000FB6B1D /* AppDelegate.h */,
 				C97C8A10174D40C000FB6B1D /* AppDelegate.m */,
 				C97C8A18174D40C000FB6B1D /* MainStoryboard.storyboard */,
@@ -184,7 +194,9 @@
 			files = (
 				C97C8A0D174D40C000FB6B1D /* main.m in Sources */,
 				C97C8A11174D40C000FB6B1D /* AppDelegate.m in Sources */,
+				C9C6143F18739F120001CACD /* UITextField+IPCustomFont.m in Sources */,
 				C97C8A1D174D40C000FB6B1D /* ViewController.m in Sources */,
+				C9C6143C187399CA0001CACD /* UIButton+IPCustomFont.m in Sources */,
 				C97C8A25174D49A000FB6B1D /* UILabel+IPCustomFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

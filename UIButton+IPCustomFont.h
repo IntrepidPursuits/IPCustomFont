@@ -1,0 +1,2 @@
+@interface UIButton (IPCustomFont)
+@end
