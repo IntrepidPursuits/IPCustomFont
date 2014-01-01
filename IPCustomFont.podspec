@@ -1,105 +1,108 @@
 #
-# Be sure to run `pod spec lint IPCustomFont.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
+#  Be sure to run `pod spec lint IPCustomFont.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# To learn more about the attributes see http://docs.cocoapods.org/specification.html
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
+
 Pod::Spec.new do |s|
+
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
   s.name         = "IPCustomFont"
-  s.version      = "0.0.1"
-  s.summary      = "Set custom fonts on UILabels via interface builder."
-  # s.description  = <<-DESC
-  #                   An optional longer description of IPCustomFont
-  #
-  #                   * Markdown format.
-  #                   * Don't worry about the indent, we strip it!
-  #                  DESC
-  s.homepage     = "http://EXAMPLE/IPCustomFont"
-  # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.version      = "0.0.2"
+  s.summary      = "A way to set custom fonts on UI elements in interface builder."
 
-  # Specify the license type. CocoaPods detects automatically the license file if it is named
-  # 'LICENCE*.*' or 'LICENSE*.*', however if the name is different, specify it.
-  s.license      = 'BSD'
-  # s.license      = { :type => 'MIT (example)', :file => 'FILE_LICENSE' }
+  s.description  = <<-DESC
+When using a font outside those that are built into iOS, it's often necessary
+to set fonts on labels, buttons, and text fields programatically. There are
+many solutions to this, including subclassing, categories, or utility classes. 
+It would be cleaner if interface builder allowed you to set custom fonts directly
+in the nib or storyboard. With IPCustomFont, you can leverage the "User-defined runtime
+attributes" in interface builder's identity inspector to do just that.
+                   DESC
 
-  # Specify the authors of the library, with email addresses. You can often find
-  # the email addresses of the authors by using the SCM log. E.g. $ git log
-  #
-  s.author       = { "Matt Bridges" => "matt@intrepid.io" }
-  # s.authors      = { "Matt Bridges" => "matt@intrepid.io", "other author" => "and email address" }
-  #
-  # If absolutely no email addresses are available, then you can use this form instead.
-  #
-  # s.author       = 'Matt Bridges', 'other author'
-
-  # Specify the location from where the source should be retrieved.
-  #
-  s.source       = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.1" }
+  s.homepage     = "https://github.com/IntrepidPursuits/IPCustomFont"
 
 
-  # If this Pod runs only on iOS or OS X, then specify the platform and
-  # the deployment target.
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
+  #  Licensing your code is important. See http://choosealicense.com for more info.
+  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #
+
+
+  # s.license      =  :type => 'BSD'
+
+
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the authors of the library, with email addresses. Email addresses
+  #  of the authors by using the SCM log. E.g. $ git log. If no email can be
+  #  found CocoaPods accept just the names.
+  #
+
+  s.author             = { "Matt Bridges" => "matt@intrepid.i9o" }
+
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If this Pod runs only on iOS or OS X, then specify the platform and
+  #  the deployment target. You can optionally include the target after the platform.
+  #
+
   s.platform     = :ios, '5.0'
 
-  # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # If this Pod runs on both platforms, then specify the deployment
-  # targets.
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  #  Specify the location from where the source should be retrieved.
+  #  Supports git, hg, bzr, svn and HTTP.
+  #
 
-  # A list of file patterns which select the source files that should be
-  # added to the Pods project. If the pattern is a directory then the
-  # path will automatically have '*.{h,m,mm,c,cpp}' appended.
-  #
-  s.source_files = 'UILabel+IPCustomFont.h', 'UILabel+IPCustomFont.m'
-  #s.exclude_files = 'Classes/Exclude'
+  s.source       = { :git => "https://github.com/IntrepidPursuits/IPCustomFont.git", :tag => "0.0.2" }
 
-  # A list of file patterns which select the header files that should be
-  # made available to the application. If the pattern is a directory then the
-  # path will automatically have '*.h' appended.
-  #
-  # If you do not explicitly set the list of public header files,
-  # all headers of source_files will be made public.
-  #
-  # s.public_header_files = 'Classes/**/*.h'
 
-  # A list of resources included with the Pod. These are copied into the
-  # target bundle with a build phase script.
+  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  #  CocoaPods is smart about how it includes source code. For source files
+  #  giving a folder will include any h, m, mm, c & cpp files. For header
+  #  files it will include any header in the folder.
+  #  Not including the public_header_files will make all headers public.
+  #
 
-  # A list of paths to preserve after installing the Pod.
-  # CocoaPods cleans by default any file that is not used.
-  # Please don't include documentation, example, and test files.
-  #
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  s.source_files  = '*.{h|m}'
 
-  # Specify a list of frameworks that the application needs to link
-  # against for this Pod to work.
-  #
-  # s.framework  = 'SomeFramework'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
 
-  # Specify a list of libraries that the application needs to link
-  # against for this Pod to work.
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  # s.library   = 'iconv'
-  # s.libraries = 'iconv', 'xml2'
+  #  A list of resources included with the Pod. These are copied into the
+  #  target bundle with a build phase script. Anything else will be cleaned.
+  #  You can preserve files from being cleaned, please don't preserve
+  #  non-essential files like tests, examples and documentation.
+  #
 
-  # If this Pod uses ARC, specify it like so.
+
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
+  #  Link your library with frameworks, or libraries. Libraries do not include
+  #  the lib prefix of their name.
+  #
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If your library depends on compiler flags you can set them in the xcconfig hash
+  #  where they will only apply to your library. If you depend on other Podspecs
+  #  you can include multiple dependencies to ensure it works.
+
   s.requires_arc = true
 
-  # If you need to specify any other build settings, add them to the
-  # xcconfig hash.
-  #
-  # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
-  # Finally, specify any Pods that this Pod depends on.
-  #
-  # s.dependency 'JSONKit', '~> 1.4'
 end
